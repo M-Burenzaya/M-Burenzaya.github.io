@@ -2,6 +2,12 @@
 <head>
     <title>CalculatorJadambaAndBurenzaya</title>
     <style>
+        table{
+            display: table;
+            box-sizing: border-box;
+            text-indent: initial;
+            border-color: gray;
+        }
         sciout{
             padding: 5px;
             border-top: 1px solid #fff;
@@ -30,11 +36,41 @@
             border-radius: 0px;
             color: #fff;
         }
+        contentout{
+            width:1100px;
+            padding-top: 5px;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: left;
+            overflow: auto;
+        }
     </style>
 </head>
 
 <body>
-    <!-- <h1>Jadamba</h1>
-    <img src = "img_typo.jpg" alt = "Test"> -->
+    <caption>Jadamba&Burenzaya_Calculator</caption>
+    <div id="contentout">
+        <table align="center" width="100%" cellpadding="0" cellpacing="0" border="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <table align="center" id="sciout" cellpadding="0" cellpaciing="2">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <div>   
+                                            <div id="sciInPut">&nbsp;</div>
+                                            <div id="sciOutPut">0</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
     
 </body>
