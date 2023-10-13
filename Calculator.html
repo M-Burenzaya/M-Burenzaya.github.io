@@ -2,42 +2,7 @@
 <html>
     <head>
         <title>HTML дээр хийсэн тооцоолуур</title>
-        <style>
-            table {
-                display: table;
-                background-color: #3a4452;
-                border-radius: 1px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            input[type="button"] {
-                width: 100%;
-                text-align: center;
-                padding: 20px 15px;
-                background-color: transparent;
-                font-size: 24px;
-                font-weight: bold;
-                border-radius: 100px;
-            }
-
-            .display {
-                padding: 10px;
-                font-weight: bold;
-                background-color: #3a4452;
-            }
-            .display input {
-                text-align: right;
-                font-size: 24px;
-                background-color: #cecece;
-            }
-
-            #contentout {
-                width: 100%;
-                height: 100vh;
-                background: #e3f9ff;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="Calculator.css">
     </head>
 
     <body>
@@ -69,8 +34,8 @@
                     <td><input type="button" value="-" onclick="display.value+='-'"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="0" onclick="display.value+='0'"></td>
                     <td><input type="button" value="." onclick="display.value+='.'"></td>
+                    <td><input type="button" value="0" onclick="display.value+='0'"></td>
                     <td><input type="button" value="=" onclick="display.value = eval(display.value)"></td>
                     <td><input type="button" value="+" onclick="display.value+='+'"></td>
                 </tr>
