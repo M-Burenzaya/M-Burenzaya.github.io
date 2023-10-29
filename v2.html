@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML дээр хийсэн тооцоолуур</title>
-        <link rel="stylesheet" type="text/css" href="Calculator.css">
+        <link rel="stylesheet" type="text/css" href="Calc.css">
     </head>
 
     <body>
@@ -14,9 +12,15 @@
                     <td colspan="3" class="display">
                         <input type="text" id="display">
                     </td>
-                    <td><input type="button" value="c" onclick="display.value=' '"></td>
+                    
                 </tr>
 
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="(" onclick="display.value+='('"></td>
+                    <td><input type="button" value=")" onclick="display.value+=')'"></td>
+                    <td><input type="button" value="c" onclick="display.value=' '"></td>
+                </tr>
                 <tr>
                     <td><input type="button" value="1" onclick="display.value+='1'"></td>
                     <td><input type="button" value="2" onclick="display.value+='2'"></td>
