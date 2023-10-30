@@ -14,9 +14,7 @@ body {
 
 table {
     display: table;
-    background-color: #3a4452;
-    border-radius: 10px;
-    margin: auto;
+    margin: 10px;
 }
 
 input[type="button"] {
@@ -44,14 +42,39 @@ input[type="button"] {
     border-radius: 10px;
     width: 100%;
 }
-
 .container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    background-color: #3a4452; border-radius: 10px;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;grid-row-gap: 0px;
 }
-    
-.calculator { grid-area: 1 / 1 / 5 / 5; }
-.scientific { grid-area: 1 / 5 / 2 / 6; }
-.memory     { grid-area: 2 / 5 / 5 / 6; }
+.scientific input {
+    flex: 1;
+    margin: 10px;
+    background-color: #656e7a;
+}
+
+#memory-container div {
+    width: 100%; height: 10%;
+    margin-bottom: 1.25%;
+    border: 1px solid #000;  border-radius: 5px;
+}
+
+.calculator { 
+    grid-area: 1 / 1 / 5 / 5;
+}
+
+.scientific { 
+    grid-area: 1 / 5 / 2 / 7;
+    display: flex;
+}
+
+.memory { 
+    grid-area: 2 / 5 / 5 / 7;
+    border: 1px solid #000; border-radius: 10px;
+    background-color: #656e7a;
+    padding: 5px; margin: 10px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
