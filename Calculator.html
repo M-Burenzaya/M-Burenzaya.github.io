@@ -12,18 +12,13 @@
         <div id="contentout">
             <div class="container">
                 <div class="calculator">
-                    <table>
+                    <table id="myTable">
                         <tr>
                             <td colspan="3" class="display"><input type="text" id="display"></td>
                             <td><input type="button" value="c" onclick="display.value=' '"></td>
                         </tr>
 
-                        <tr>
-                            <td><input type="button" value="  (  " onclick="display.value+='('"></td>
-                            <td><input type="button" value="  )  " onclick="display.value+=')'"></td>
-                            <td><input type="button" value=" % " onclick="display.value+='%'"></td>
-                            <td><input type="button" value="sqrt(" onclick="display.value+='Math.sqrt('"></td>
-                        </tr>
+                        <tr id="additionalRow" style="display: none;">
         
                         <tr>
                             <td><input type="button" value="1" onclick="display.value+='1'"></td>
@@ -53,7 +48,7 @@
                 </div>
 
                 <div class="scientific">
-                        <input type="button" value="..." onclick="">
+                        <input type="button" value="..." onclick="scientific()">
                         <input type="button" value="M" onclick="memoryWrite(display.value)">
                 </div>
 
