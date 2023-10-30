@@ -9,9 +9,14 @@ for (let i = 0; i < 10; i++) {
 let i = 0;
 function Evaluate(args){
     const value = eval(args);
-    array.push(value);
+    return value;
+}
+
+function memoryWrite(args){
+  if(Evaluate(args) == args){
+    array.push(args);
     let myElement = document.getElementById(`memory-${i}`);
     myElement.textContent = "Memory " +array[i];
     i++;
-    return value;
+  }
 }
