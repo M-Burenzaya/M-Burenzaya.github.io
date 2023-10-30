@@ -8,9 +8,9 @@ for (let i = 0; i < 10; i++) {
   memoryContainer.appendChild(divElement);
 }
 let i = 0;
-function Evaluate(args) {
-  const value = eval(args);
-  return value;
+function Evaluate(args){
+    const value = eval(args);
+    return value.toFixed(12);
 }
 
 function memoryWrite(args) {
