@@ -9,7 +9,7 @@ for (let i = 0; i < 10; i++) {
 let i = 0;
 function Evaluate(args){
     const value = eval(args);
-    return value;
+    return value.toFixed(12);
 }
 
 function memoryWrite(args){
